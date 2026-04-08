@@ -14,10 +14,10 @@
     * Open a private window in your browser. Copy and paste the link to your pull request into the address bar. Make sure you can see your pull request properly. This helps the technical facilitator and learning support staff review your submission easily.
 
 Checklist:
-- [ ] Create a branch called `assignment-two`.
-- [ ] Ensure that the repository is public.
-- [ ] Review [the PR description guidelines](https://github.com/UofT-DSI/onboarding/blob/main/onboarding_documents/submissions.md#guidelines-for-pull-request-descriptions) and adhere to them.
-- [ ] Verify that the link is accessible in a private browser window.
+- [x] Create a branch called `assignment-two`.
+- [x] Ensure that the repository is public.
+- [x] Review [the PR description guidelines](https://github.com/UofT-DSI/onboarding/blob/main/onboarding_documents/submissions.md#guidelines-for-pull-request-descriptions) and adhere to them.
+- [x] Verify that the link is accessible in a private browser window.
 
 If you encounter any difficulties or have questions, please don't hesitate to reach out to our team via our Slack. Our Technical Facilitators and Learning Support staff are here to help you navigate any challenges.
 
@@ -56,7 +56,9 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
+Type 1 would overwrite the data. To do this, we would have the customer data that includes the customer_id, name, address, city and so on. When the a new address gets added, it overwrites the address inputs.
+
+Type 2 would keep both addresses. To do this, you need to be able to create multiple rows for the same customer. Each row would have the same columns as before but will also include address_id and a columen such as is_current. Other things that might be added is when the address was added and removed.
 ```
 
 ***
@@ -191,5 +193,11 @@ Consider, for example, concepts of labour, bias, LLM proliferation, moderating c
 
 
 ```
-Your thoughts...
+There are multiple things to consider when it comes to data generation for neural networks. First, humans are biased and as such, how they categorize data will have biases. This in turn will cause biases in the neural networks. For example, when the first versions of ChatGPT came out, it seems to already have some biases as the data used to training was not all inspected. It was trained on all the data available in the internet which included negative retorics against women for example. It can also show biases and give answers that are more left wing leaning.
+
+Another ethical issue I see arising is unethical practices for data generation. For NN and AI models to be trained, they require lots of data and ground truth. While there has been an exploration of new methods to create new useful data from NN or do unsupervised learning, it seems like creating data from the "real" world is still important to improve the models. As such, to be able to create such large data sets, companies will have to employ humans. I expect that companies will exploit people and resources in the third world to create such data sets, just like people are being exploited to create fast fashion garments. 
+
+The use of the planet's resources is another ethical issue to consider, as companies will continue to use AI to increase of profits while attributing to the massive ecological disaster leading to climate change.
+
+Overall, it is important to look at these ethical issues that are arising following the invention of NN and how it has to be regulated to avoid biases that might have effects on peoples quality of life and explotations of humans and resources.
 ```
